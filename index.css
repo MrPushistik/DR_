@@ -1,0 +1,226 @@
+*{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+@font-face {
+    font-family: DR;
+    src: url(./Genshin_Impact.ttf);
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.show{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 1;
+    overflow: hidden;
+}
+.not-show{
+    display: none;
+}
+.to-show{
+    display: visible;
+}
+.skip{
+    background-size: cover;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: 1.5vw;
+    right: 1.5vw;
+    background-image: url(./skip.png);
+    z-index: 5;
+}
+.lega{
+    height: 100vh;
+    z-index: 2;
+    animation: 0.5s appear ease-in;
+}
+.video, .lega{
+    width: 100%;
+    background-size:cover;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    border: 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+p{
+    font-family: dr;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("back.png");
+    background-size: cover;
+}
+.back{
+    width: 80%;
+}
+
+.switch-banner{
+    width: 90vw;
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-wrap{
+    width: 25vw;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.face{
+    position: relative;
+    width: 4vw;
+    height: 5vw;
+    top: -0.9vw;
+    left: 3.5vw;
+    background-size: cover;
+}
+.sof-face{
+    background-image: url(./sof.png);
+}
+.ksu-face{
+    background-image: url(./ksu.png);
+}
+
+.select-banner{
+    width: 11vw;
+    height: 4.1vw;
+    background-image: url("./ch.png");
+    background-size: cover;
+}
+
+.balance{
+    width: 18vw;
+    height: 2vw;
+    display: flex;
+}
+
+.fate{
+    border-radius: 1vw;
+    width: 5vw;
+    height: 2vw;
+    background-color: #5e727ee4;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2vw;
+}
+.fate-img{
+    width: 1.6vw;
+    height: 1.5vw;
+}
+.fate-amount{
+    margin-right: 0.5vw;
+}
+.primo{
+    border-radius: 1vw;
+    width: 9vw;
+    height: 2vw;
+    background-color: #5e727ee4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2vw;
+}
+.add-fate{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    font-family: DR;
+    font-size: 1.2vw;
+    color: rgb(125, 125, 125);
+    background-color: blanchedalmond;
+}
+.primo-img{
+    width: 1.6vw;
+    height: 1.5vw;
+}
+.amount{
+    font-family: DR;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.wish-holder{
+    width: 32vw;
+    height: 5vw;
+    display: flex;
+}
+
+.banner{
+    width: 54vw;
+    height: 27vw;
+    background-color: rgba(0, 0, 255, 0.475);
+    background-size: cover;
+    background-image: url(./banner1.jpg);
+}
+
+
+.wish{
+    width: 13.5vw;
+    height: 3vw;
+    margin-right: 2.5vw;
+    background-size: cover;
+}
+.wish-1{
+    background-image: url("./Wish1.png");
+}
+.wish-10{
+    background-image: url("./Wish10.png");
+}
